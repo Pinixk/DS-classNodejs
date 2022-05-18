@@ -1,15 +1,16 @@
 //최근에 spread operator가 복사, 연결 등에 다방면으로 사용 중
 
-//문자열
+// 문자열
 var str1 = 'hello world'; 
 var str2 = [...str1];   // 글자 단위로 분해
 console.log(str2);      // ['h', 'e', 'l', 'l','o', ' ', 'w', 'o','r', 'l', 'd']
 
+// 객체
 const aa = {'name':'김봉조', 'mobile':'010.8977.3917'};
 const bb = {...aa, "key":1}
-console.log(bb);
+console.log(bb);        // { name: '김봉조', mobile: '010.8977.3917', key: 1 }
 
-//배열
+// 배열
 const arr1 = [1,2,3,4,5];
 const arr2 = [...arr1,6,7,8,9];
 console.log(arr2); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
