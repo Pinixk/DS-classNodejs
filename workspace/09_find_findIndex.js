@@ -15,4 +15,6 @@ const 친구들 = [
 const 키큰친구 = 친구들.find(조건)           // 값을 못 찾으면 undefined
 console.log(키큰친구)
 const 키큰친구인덱스 = 친구들.findIndex(조건) // 값을 못 찾으면 -1
+const tallestFriend = 친구들.indexOf(조건) // findIndex와 동작은 비슷하나 성능이 별로다
 console.log(키큰친구인덱스); 
+console.log(tallestFriend);
