@@ -2,10 +2,10 @@ var arr = [10, 2, 3, 4, 5];
 var maxCallback = (a, b) => {
     return Math.max(a, b);
 }
+// const result = arr.reduce(maxCallback);
 const result = arr.reduce((a, b) => {
     return Math.max(a, b);
-}, 13);
-// const result = arr.reduce(maxCallback);
+}, 0);
 console.log(result);
 
 
