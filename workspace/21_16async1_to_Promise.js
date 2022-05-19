@@ -1,8 +1,8 @@
 const a = (c = "job") => {
     return new Promise((resolve, reject) => { 
         setTimeout(() => {
-            resolve(c);
-            // console.log(c);
+            // resolve(c);
+            console.log(c);
         }, 100);
     });
 }
