@@ -11,4 +11,4 @@ for (let i = 0; i < a.length; i++) {
 }
 
 for (const item of a){console.log(item);} // a 요소를 출력
-for(const item in a){console.log(item);} // a 요소의 인덱스를 출력
+for(const item in a){console.log(item);}  // a 요소의 인덱스를 출력
