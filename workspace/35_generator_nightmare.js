@@ -14,8 +14,8 @@ function* run() {
         currHeight = yield nightmare.evaluate(() => document.body.scrollHeight)
         yield nightmare.scrollTo(currHeight, 0).wait(3000)
     }
-    const a = yield nightmare.evaluate(() => Array
-        .from(document.querySelectorAll('a.thumb'))
+    const a = yield nightmare
+        .evaluate(() => Array.from(document.querySelectorAll('a.thumb'))
         .map(e => (`https://grafolio.naver.com${e.getAttribute('href')}`)))
     console.log(a);
     yield nightmare.end()
