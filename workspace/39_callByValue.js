@@ -24,9 +24,7 @@ console.log(x,y); // 1, 2
 
 
 const arr = {'a':1}
-const fnc = function(c){
-    c.a = 2
-}
+const fnc = function(c){c.a = 2}
 fnc(arr)
 console.log(arr);   // {'a':2} 
 //객체일 때는 call by reference, 주의!
