@@ -1,4 +1,5 @@
 {
+  "type" : "module",
   "dependencies": {
     "fxjs": "^0.21.3",
     "nightmare": "^3.0.2",
