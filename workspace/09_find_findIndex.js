@@ -4,7 +4,7 @@ const found = arr.find(function(el){ // 찾은 값 중에 첫번째 값
 })
 console.log(found);
 
-const 조건 = e => e.height >= 200
+const 조건 = e => e.height >= 180
 const 친구들 = [
     {"name" : "박종선", "height" : 173},
     {"name" : "연제호", "height" : 175},

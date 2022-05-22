@@ -18,7 +18,7 @@ console.log(String.fromCharCode(result2));
 
 
 
-const result3 = [{x:22}, {x:42}].reduce((max, cur)=>{ // typeof = object
-    return Math.max(max.x , cur.x);                   // object값이므로 값을 꺼내줌
+const result3 = [{x:22}, {x:42}].reduce((max, cur)=>{   // typeof = object
+    return Math.max(max.x , cur.x);                     // object값이므로 값을 꺼내줌
 }) 
 console.log(result3);
