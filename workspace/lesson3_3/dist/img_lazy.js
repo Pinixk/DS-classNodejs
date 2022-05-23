@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (!lazyImages.length) {
                     document.removeEventListener("scroll", lazyLoad)
                 } else active = false
-            }, 200)
+            }, 800)
         }
     }
     document.addEventListener("scroll", lazyLoad)
