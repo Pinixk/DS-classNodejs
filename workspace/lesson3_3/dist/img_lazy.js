@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         return null
                     } else return lazyImage
                 }).filter(image => image)
-                // !lazyImages.length의 값이 0일 경우 이벤트 추가
+                // !lazyImages.length의 값이 0 아닐 경우 이벤트 추가
+                // 0일 경우 active는 false 값을 가진다.
                 if (!lazyImages.length) {
                     document.removeEventListener("scroll", lazyLoad)
                 } else active = false
