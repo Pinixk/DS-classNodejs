@@ -19,4 +19,3 @@ a().then(ret => {   // 실행 결과
 }).catch(function(e){   // 예외가 발생했을 때
     console.log(`${e}라는 에러가 발생`);
 });
-

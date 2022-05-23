@@ -6,7 +6,7 @@ console.log(it.next());
 console.log(it.next());
 console.log(it.next());
 
-for (let i = 0; i < a.length; i++) {
+for (let i = 0; i < a.length; i++) {      //it.next 다음의 값 부터 나옴
     console.log(it.next());
 }
 
