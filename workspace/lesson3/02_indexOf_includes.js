@@ -6,4 +6,6 @@ function fnc() {
     let srch = '살라'
     return (a.indexOf(srch) != -1) ? a.indexOf(srch) : -1;
 }
-console.log(fnc());
+console.log(fnc()); // 매번 다름
+
+// https://jsbench.me/z3kjkk0ul0/10
