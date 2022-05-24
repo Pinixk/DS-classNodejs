@@ -2,6 +2,7 @@
 var obj = {"id":"4"}
 console.log(JSON.stringify(obj));   // {"id":"4"}
 
+
 // JSON  Array 형식
 var months = [{"id":1 , "name":"Jan"}, {"id":2, 'name':'Feb'}]
 var jasonMonths = JSON.parse(JSON.stringify([...months]))
@@ -18,12 +19,14 @@ a = JSON.parse(a);
 console.log(typeof a);      // object, json object로 바뀜
 console.log(a.name);        // KBJ
 
+
 // array to JSON
 const myArr = ["banana", 'apple']
 console.log(JSON.stringify(myArr));
 const jsonArr = JSON.parse(JSON.stringify(myArr))
 console.log(typeof jsonArr)
 console.log(jsonArr);
+
 
 // object to JSON
 const myObj = {name : "Son", data : new Date()}

@@ -18,8 +18,8 @@ for(let entry of Object.entries(obj)){      // entry[0] key값 = 이름, 나이,
 }
 
 // ex)
-const _name = '이름'
-console.log(obj[_name]);        // 큰돌
-console.log(obj['이름']);       // 큰돌
-console.log(obj['나이2']);      // undefined
-console.log(Object.keys(obj));  // key값
+// const _name = '이름'
+// console.log(obj[_name]);        // 큰돌
+// console.log(obj['이름']);       // 큰돌
+// console.log(obj['나이2']);      // undefined
+// console.log(Object.keys(obj));  // key값
