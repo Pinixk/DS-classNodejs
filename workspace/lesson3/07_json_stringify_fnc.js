@@ -9,5 +9,5 @@ console.log(ret);
 const replacer = (key, value) => {
     return (typeof value === 'string' ? undefined : value)
 }
-const result = JSON.stringify(a, replacer,3)
+const result = JSON.stringify(a, replacer, 3)
 console.log(result);
