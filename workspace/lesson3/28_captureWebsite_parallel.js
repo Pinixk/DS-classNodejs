@@ -22,6 +22,6 @@ async function main(){
         C.takeAll(BATCH)
     )
     console.log('Scrapping is completed');
-    return ret;
+    // return ret;
 }
 main()
