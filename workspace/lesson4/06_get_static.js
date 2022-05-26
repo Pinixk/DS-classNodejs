@@ -18,8 +18,8 @@ app.get('/book/:bookName',(req,res)=>{
     const {bookName} = req.params
     res.send(`안녕하세요 알라딘 입니다. ${bookName}을 주문하셨습니다.`)
 })
-// app.get("/", simple_module.intro)
-// app.get('/users/:userName/books/:bookName', simple_module.handleBook) // : 변수처럼 받아 쓸 수 있음
+app.get("/", simple_module.index)
+app.get('/users/:userName/books/:bookName', simple_module.handleBook) // : 변수처럼 받아 쓸 수 있음
 
 app.listen(PORT, () => {       
     console.log(`Server Running at http://127.0.0.1:${PORT}/`);
