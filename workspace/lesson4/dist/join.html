@@ -2,68 +2,58 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>로그인 실습</title>
-		<style>	
-			html, body{
-				width: 100vw;
-				height: 100vh;
-				display:table-cell;
-				vertical-align:middle;
-				margin:0; padding:0;
-			}			
-			#box{
-				border : 1px solid black;
-				width : 250px;
-				margin: 0 auto;
-			}
-			#button{
-				position : relative;
-				left : 31px;
-			}
-			#box span{
+		<title>입력양식 태그 실습</title>
+		<style>
+			span{
 				display : inline-block;
-				width:25px;
-				text-align : center;
+				width : 55px;
 			}
-			.btnB{
-				width : 66px;
-				text-align: center;
-			}
+			/* td{
+				font-weight:bold;				
+			} */
 		</style>
-		<script>
-			window.onload = function(){
-				var btnSend = document.getElementById("btnSend");
-					btnSend.onclick = function(event){
-						event.preventDefault();
-						var id = document.getElementById("id");
-						var pass = document.getElementById("pass");
-							if(id.value == ""){
-								alert('아이디를 확인하세요');
-								id.focus();
-								return;
-							}
-							if(pass.value == ""){
-								alert('비밀번호를 확인하세요');
-								pass.focus();
-								return;
-							}
-						document.getElementById("frm").submit();		
-				}
-			}
-		</script>
+		<script></script>
 	</head>
 	<body>
-		<fieldset id="box">
-		<legend style="text-align:center;">Login</legend>
-		<form method="get" id="frm" action="tag_media.html" <!--method="post" 일 때 enctype="multipart/form-data"-->
-			<span>ID</span>  <input type="text" name="id" id="id" style="width:202px;"><br>
-			<span>PW</span>  <input type="password" name="pass" id="pass" style="width:202px;"><br>
-			<div id="button">
-				<input class="btnB" type="submit" id="btnSend" value="Login">
-				<input class="btnB" type="reset" name="reset" id="reset" value="Cancel">
-				<button class="btnB" type="button" onclick="location.href='tag_input.html'">Join</button>
-			</div>
-		</form>
-		</fieldset>
+		<h1>글 작성하기</h1>
+		<table>
+			<tr>
+				<th>작성자</th>
+				<td><input type="text" name="name" id="name">
+			</tr>
+			<tr>
+				<th>아이디</th>
+				<td><input type="text" name="id" id="id">
+			</tr>
+			<tr>
+				<th>이메일</th>
+				<td><input type="text" name="mail" id="mail">@
+					<select name="email" id="e0" style="width:145px">
+						<option value="">선택하세요</option>
+						<option value="gmail">gmail.com</option>
+						<option value="naver">naver.com</option>
+						<option value="kakao">hanmail.com</option>
+					</select>
+			</tr>
+			<tr>
+				<th>휴대폰</th>
+				<td><select name="mobile" id="m0">
+						<option value="">선택하세요</option>
+						<option value="010">010</option>
+						<option value="011">011</option>
+					</select> -
+				<input type="text" name="m1" id="m1" style="width:100px;"> -
+				<input type="text" name="m2" id="m2" style="width:100px;">
+			</tr>
+			<tr>
+				<th>글제목</th>
+				<td><input type="text" name="title" id="title">
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea style="width:340px; height:200px;" name="T" id="T"></textarea>
+			</tr>
+		</table>
+		<span></span><input type="button" value="제출" id="btn">
 	</body>
 </html>

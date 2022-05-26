@@ -6,9 +6,12 @@ const app = express()
 const PORT = 3000
 const _path = path.join(__dirname, './dist')
 const fs = require('fs')
+const bodyParser = require('body-parser')
 console.log(_path);
 app.use('/dist', express.static(_path))
 app.use(loogger('tiny'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.use((req,res,next)=>{
     console.log('요청이 왔네요~ 지나갑니다');
@@ -25,7 +28,9 @@ app.get('/join', (req,res) => {
         res.end(data)
     })
 })
+// npm install body-parser로 
 app.post('/join', (req,res) => {
+    const {} = req;
     console.log(req.params);
 })
 app.get("/", simple_module.index)

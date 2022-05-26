@@ -8,7 +8,7 @@ module.exports.handleBook = (req,res) => {
     res.send(req.params)
 }
 module.exports.index = (req,res) => {
-    fs.readFile('./dist/index.html', function(error, data){
+    fs.readFile('./dist/join.html', function(error, data){
         res.writeHead(200, {'Content-Type' : 'text/html'})        
         res.end(data)
     })
