@@ -25,6 +25,9 @@ app.get('/join', (req,res) => {
         res.end(data)
     })
 })
+app.post('/join', (req,res) => {
+    console.log(req.params);
+})
 app.get("/", simple_module.index)
 app.get('/users/:userName/books/:bookName', simple_module.handleBook) // : 변수처럼 받아 쓸 수 있음
 
