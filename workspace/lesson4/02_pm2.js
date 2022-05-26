@@ -14,3 +14,4 @@ setTimeout(() => {
 server.listen(PORT,()=>{
     console.log(`Server Running at http://127.0.0.1:${PORT}/`);
 })
+// pm2 start 02_pm2.js -l pm2.log를 하면 로그 파일이 생성됨(pm2에서만)
