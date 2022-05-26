@@ -10,6 +10,7 @@ setTimeout(() => {
     // 에러를 발생시켜서 1초마다 서버가 중지되게 함.
     JSON.parse("{Z")
 }, 3000);
+
 server.listen(PORT,()=>{
     console.log(`Server Running at http://127.0.0.1:${PORT}/`);
 })
