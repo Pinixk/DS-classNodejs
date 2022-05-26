@@ -1,4 +1,4 @@
-// const simple_module = require("./05_simple_module.js")
+const simple_module = require("./05_simple_module.js")
 const express = require('express')
 const path = require('path')
 const loogger = require('morgan')
