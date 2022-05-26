@@ -6,5 +6,8 @@
     "nightmare": "^3.0.2",
     "ramda": "^0.28.0",
     "vo": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
