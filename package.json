@@ -9,5 +9,23 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
-  }
+  },
+  "name": "classnodejs",
+  "description": "2022/04/28 ~ 2022/10/13<br>\r 05/17 ~ 05/24 : js 기본 문법<br>\r 05/25 ~ : Node.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon ./workspace/lesson4/02.nodemon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pinixk/DS-classNodejs.git"
+  },
+  "author": "KBJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pinixk/DS-classNodejs/issues"
+  },
+  "homepage": "https://github.com/Pinixk/DS-classNodejs#readme"
 }
