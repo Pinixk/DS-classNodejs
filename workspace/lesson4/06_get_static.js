@@ -29,9 +29,9 @@ app.get('/join', (req,res) => {
     })
 })
 // npm install body-parser로 
-app.post('/join', (req,res) => {
-    const {} = req;
-    console.log(req.params);
+app.post('/joinfrm', (req,res) => {
+    const {body:{id, pass}} = req;
+    console.log(id, pass);
 })
 app.get("/", simple_module.index)
 app.get('/users/:userName/books/:bookName', simple_module.handleBook) // : 변수처럼 받아 쓸 수 있음
