@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>로그인 실습</title>
+		<style>	
+			html, body{
+				width: 100vw;
+				height: 100vh;
+				display:table-cell;
+				vertical-align:middle;
+				margin:0; padding:0;
+			}			
+			#box{
+				border : 1px solid black;
+				width : 250px;
+				margin: 0 auto;
+			}
+			#button{
+				position : relative;
+				left : 31px;
+			}
+			#box span{
+				display : inline-block;
+				width:25px;
+				text-align : center;
+			}
+			.btnB{
+				width : 66px;
+				text-align: center;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var btnSend = document.getElementById("btnSend");
+					btnSend.onclick = function(event){
+						event.preventDefault();
+						var id = document.getElementById("id");
+						var pass = document.getElementById("pass");
+							if(id.value == ""){
+								alert('아이디를 확인하세요');
+								id.focus();
+								return;
+							}
+							if(pass.value == ""){
+								alert('비밀번호를 확인하세요');
+								pass.focus();
+								return;
+							}
+						document.getElementById("frm").submit();		
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<fieldset id="box">
+		<legend style="text-align:center;">Login</legend>
+		<form method="get" id="frm" action="tag_media.html" <!--method="post" 일 때 enctype="multipart/form-data"-->
+			<span>ID</span>  <input type="text" name="id" id="id" style="width:202px;"><br>
+			<span>PW</span>  <input type="password" name="pass" id="pass" style="width:202px;"><br>
+			<div id="button">
+				<input class="btnB" type="submit" id="btnSend" value="Login">
+				<input class="btnB" type="reset" name="reset" id="reset" value="Cancel">
+				<button class="btnB" type="button" onclick="location.href='tag_input.html'">Join</button>
+			</div>
+		</form>
+		</fieldset>
+	</body>
 </html>
