@@ -1,12 +1,10 @@
 const express = require("express")
-const path = require('path')
 const app = express()
 
 app.set('port', process.env.PORT || 3000)
-app.use(express.static('public'))
 app.get("/", (req, res) => {
     console.log(__dirname);
-    res.send(path.join(__dirname,'/public/index.html'))
+    res.send('<h1>Hello Express</h1>')
 })
 
 const PORT = app.get('port')

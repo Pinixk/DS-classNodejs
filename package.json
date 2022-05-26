@@ -16,7 +16,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon ./workspace/lesson4/02.nodemon.js"
+    "start" : "node ./workspace/helloServer/helloWorld.js",
+    "dev" : "nodemon ./workspace/lesson4/02_nodemon.js"
   },
   "repository": {
     "type": "git",
